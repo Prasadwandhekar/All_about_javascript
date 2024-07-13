@@ -86,6 +86,7 @@
 // We just need to add an empty string after the number
 // Example:
 
+
 // var str = 5;
 // str = String(str);
 // str = str.toString();
@@ -177,5 +178,8 @@
 // } else {
 //   console.log("not equal");
 // }
+
+
+
 
 //* ========== parseInt & parseFloat End Section ==========
