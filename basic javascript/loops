@@ -37,7 +37,7 @@
 // } else if (temperature >= 20 && temperature < 30) {
 //   console.log("tv dekhte hai yr");
 // } else {
-//   console.log("kambhal oodo so jawo");
+//   console.log("it is too cold");
 // }
 
 //* ===============================
