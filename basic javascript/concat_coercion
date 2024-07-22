@@ -21,7 +21,8 @@
 // let result = "10" - 5; // number
 // console.log(result);
 
-
+//if we do for + then datatype is string
+//if we do for - then datatype is number
 
 //* ============================
 //* Tricky Interview Questions
