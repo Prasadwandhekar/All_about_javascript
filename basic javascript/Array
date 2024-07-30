@@ -1,6 +1,6 @@
 //* ======================================
 //* ARRAYS IN JAVASCRIPT
-//* =====================================
+//* =====================================   .
 
 //! Iterable - object where you can use the for-of loop
 //! Array-like object - Any object with length property and use indexes to access items
