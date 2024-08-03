@@ -6,7 +6,7 @@
 
 // Note:
 //? Strings created with single or double quotes works the same.
-// There is no difference between the two.
+// There is no difference between the two. 
 
 //* String Properties:
 //? length: Property that returns the length of the string (number of characters).
