@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key board events</title>
+</head>
+<body>
+    <!-- two events 1.keydown 2.keyup -->
+    <input type="text" id="myInput" placeholder="Type something..."/>
+    <div class="output">
+        <p class="keyPressed">Key Pressed</p>
+        <p class="KeyCode">key Code</p>
+        <p class="charCode">Char CodeAt</p>
+        <p class="eventType">Event Type</p>
+    </div>
+
+     <script>
+
+        var myInput = document.getElementById("myInput");
+
+        const handleKeyPress = (event) => {
+            console.log(event);
+            console.log("Key Pressed:",event.key);
+            console.log("Key code:", event.code);
+            console.log("Char code:",event.key.charCodeAt(0));
+            console.log("Event type:",event.type);
+
+            document.querySelector(".keyPressed").textContent = `Key Pressed : ${event.key}`;
+            document.querySelector(".KeyCode").textContent = `Key Code : ${event.code}`;
+            document.querySelector(".charCode").textContent = `Char Code : ${event.key.charCodeAt(0)}`;
+            document.querySelector(".eventType").textContent = `Key Type : ${event.type}`;
+
+        };
+
+
+        myInput.addEventListener("keydown", handleKeyPress)
+        // myInput.addEventListener("keyup", handleKeyPress)
+
+     </script>
+
+    
+</body>
+</html>
