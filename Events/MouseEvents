@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+</head>
+<style>
+    .addTransition{
+        color: red;
+    }
+    .addTransition1{
+        font-weight: 800;
+        color: black;
+    }
+    .addTransition2{
+        color: red;
+    }
+    .addTransition3{
+        color: lawngreen;
+        font-weight: 800;
+    }
+    .addTransition4{
+        color: aqua;
+    }
+</style>
+<body>
+    <section>
+        <div class="rectangle">Rectangle</div>
+        <button id="myButton">Click Me</button>
+    </section>
+
+    <script>
+        let myButton = document.getElementById("myButton");
+        let rectDiv = document.querySelector(".rectangle");
+
+        const handleMouseEvents = () => {
+            rectDiv.style.backgroundColor = "#f5ee62"
+        }
+
+        const handleMouseEvents1 = () => {
+            rectDiv.classList.add("addTransition")
+        }
+
+        const handleMouseEvents2 = () => {
+            rectDiv.classList.add("addTransition1")
+        }
+
+        const handleMouseEvents3 = () => {
+            rectDiv.classList.add("addTransition2")
+        }
+
+        const handleMouseEvents4 = () => {
+            rectDiv.classList.add("addTransition3")
+        }
+
+        const handleMouseEvents5 = () => {
+            rectDiv.classList.add("addTransition4")
+        }
+
+
+        myButton.addEventListener("click", handleMouseEvents)
+        myButton.addEventListener("dblclick",handleMouseEvents1)
+
+        rectDiv.addEventListener("mouseover",handleMouseEvents2)
+        rectDiv.addEventListener("mouseout",handleMouseEvents3)
+        rectDiv.addEventListener("mousedown",handleMouseEvents4)
+        rectDiv.addEventListener("mouseup",handleMouseEvents5)
+
+
+    </script>
+</body>
+</html>
